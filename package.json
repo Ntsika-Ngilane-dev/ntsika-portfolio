@@ -9,7 +9,7 @@
         "lint": "next lint",
         "start": "next start",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build"
+        "deploy": "gh-pages -d dist"
     },
     "dependencies": {
         "@expo/metro-config": "^0.20.17",
