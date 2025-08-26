@@ -1,18 +1,15 @@
 {
-
+    "homepage": "https://<Ntsika-Ngilane-dev>.github.io/<ntsika-portfolio>",
     "name": "my-v0-project",
     "version": "0.1.0",
     "private": true,
-    {
-        "homepage": "https://<Ntsika-Ngilane-dev>.github.io/<ntsika-portfolio>",
-        "scripts": {
-            "build": "next build",
-            "dev": "next dev",
-            "lint": "next lint",
-            "start": "next start",
-            "predeploy": "npm run build",
-            "deploy": "gh-pages -d build"
-        },
+    "scripts": {
+        "build": "next build",
+        "dev": "next dev",
+        "lint": "next lint",
+        "start": "next start",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "dependencies": {
         "@expo/metro-config": "^0.20.17",
