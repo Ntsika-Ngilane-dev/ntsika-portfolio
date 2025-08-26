@@ -26,8 +26,7 @@ jobs:
       - name: Build project
         run: |
           npm run build
-          npx next export   # 👈 creates 'out/' folder
-          cp out/index.html out/404.html   # 👈 fallback for React-style routing
+          cp out/index.html out/404.html   # fallback for React Router / SPA
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
