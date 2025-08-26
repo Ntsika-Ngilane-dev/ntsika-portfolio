@@ -18,16 +18,16 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
       return
     }
 
-    const timer1 = setTimeout(() => setStage("glitch"), 1000)
+    const timer1 = setTimeout(() => setStage("glitch"), 300)
     const timer2 = setTimeout(() => {
       setStage("typing")
       setShowText(true)
-    }, 2000)
-    const timer3 = setTimeout(() => setStage("fade"), 5000)
+    }, 600)
+    const timer3 = setTimeout(() => setStage("fade"), 1500)
     const timer4 = setTimeout(() => {
       localStorage.setItem("ntsika-intro-seen", "true")
       onComplete()
-    }, 6000)
+    }, 2000)
 
     return () => {
       clearTimeout(timer1)
