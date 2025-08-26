@@ -1,9 +1,9 @@
-name: Deploy React App
+name: Deploy ntsika-portfolio
 
 on:
   push:
     branches:
-      - main   # or master, whichever your default branch is
+      - main   # or master if that's your default branch
 
 permissions:
   contents: write
@@ -30,4 +30,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist   # <-- change to ./build if using CRA
+          publish_dir: ./dist   # <-- Vite build folder
