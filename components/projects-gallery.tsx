@@ -64,7 +64,7 @@ const projects: Project[] = [
     category: "Full-Stack",
     githubUrl: "https://github.com/Ntsika-Ngilane-dev/odd-jobs-marketplace.git",
     demoUrl: "https://odd-jobs-marketplace-ntsika-ngilane-devs-projects.vercel.app/",
-    imageUrl: "/oddjobs.png",
+    imageUrl: "./oddjobs.png",
     features: [
       "User authentication and profiles",
       "Job posting and management",
