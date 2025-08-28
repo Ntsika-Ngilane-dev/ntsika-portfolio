@@ -27,7 +27,7 @@ export default function IntroAnimation({ onComplete }: IntroAnimationProps) {
     const timer4 = setTimeout(() => {
       localStorage.setItem("ntsika-intro-seen", "true")
       onComplete()
-    }, 2000)
+    }, 6000)
 
     return () => {
       clearTimeout(timer1)
