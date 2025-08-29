@@ -14,7 +14,7 @@ export default function AboutHero() {
           <div className="relative group">
             <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-border bg-muted transition-all duration-500 group-hover:scale-105 group-hover:border-foreground">
               <Image
-                src="/profile.jpg"
+                src="./profile.jpg"
                 alt="Ntsika Ngilane - Professional Portrait"
                 width={320}
                 height={320}

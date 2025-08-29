@@ -26,9 +26,22 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
     }
   }, [onClose])
 
+  // Close modal when clicking on the backdrop
+  const handleBackdropClick = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      onClose();
+    }
+  };
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-      <div className="relative bg-background border border-border rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm"
+      onClick={handleBackdropClick}
+    >
+      <div 
+        className="relative bg-background border border-border rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
         {/* Close Button */}
         <Button variant="ghost" size="icon" className="absolute top-4 right-4 z-10" onClick={onClose}>
           <X className="w-5 h-5" />
