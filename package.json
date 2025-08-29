@@ -63,6 +63,7 @@
         "react-intersection-observer": "^9.16.0",
         "react-native": "^0.73.11",
         "react-native-web": "^0.20.0",
+        "react-pdf": "^10.1.0",
         "react-resizable-panels": "^2.1.7",
         "recharts": "2.15.4",
         "sonner": "^1.7.4",
