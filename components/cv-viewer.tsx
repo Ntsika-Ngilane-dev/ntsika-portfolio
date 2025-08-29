@@ -20,7 +20,7 @@ const PDFViewer = dynamic(
 
 export default function CVViewer() {
   const [isLoading, setIsLoading] = useState(true)
-  const [showPdf, setShowPdf] = useState(false)
+  const [showPdf, setShowPdf] = useState(true)
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -76,39 +76,38 @@ export default function CVViewer() {
         </div>
       </div>
 
-      {/* CV Preview */}
-      <div className="container mx-auto px-4 max-w-4xl">
-        <div 
-          className="mb-8 overflow-hidden rounded-lg border border-border shadow-xl transition-all duration-300 hover:shadow-2xl cursor-pointer"
-          onClick={() => setShowPdf(true)}
-        >
-          <div className="relative group">
-            <img 
-              src="/placeholder.svg?height=1123&width=794&text=Ntsika+Ngilane+CV" 
-              alt="CV Preview" 
-              className="w-full h-auto border-b border-border"
-            />
-            <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-              <p className="text-white font-mono text-sm bg-black/70 px-4 py-2 rounded-full">Click to view interactive version</p>
-            </div>
+      {/* File Info Bar */}
+      <div className="container mx-auto px-4 max-w-4xl mb-6">
+        <div className="flex items-center justify-between bg-muted/20 px-6 py-3 rounded-t-lg border border-b-0 border-border">
+          <div className="flex items-center">
+            <FileText className="w-5 h-5 mr-3 text-muted-foreground" />
+            <span className="font-mono text-sm text-muted-foreground">Ntsika_Ngilane_CV.pdf</span>
           </div>
-          
-          {/* File Info Bar */}
-          <div className="flex items-center justify-between bg-muted/20 px-6 py-3">
-            <div className="flex items-center">
-              <FileText className="w-5 h-5 mr-3 text-muted-foreground" />
-              <span className="font-mono text-sm text-muted-foreground">Ntsika_Ngilane_CV.pdf</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Eye className="w-4 h-4 text-muted-foreground" />
-              <span className="font-mono text-xs text-muted-foreground">Click to view full CV</span>
-            </div>
+          <div className="flex items-center gap-4">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="font-mono text-xs h-8"
+              onClick={handleDownload}
+            >
+              <Download className="w-3.5 h-3.5 mr-2" />
+              Download
+            </Button>
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="font-mono text-xs h-8"
+              onClick={handleOpenInNewTab}
+            >
+              <ExternalLink className="w-3.5 h-3.5 mr-2" />
+              Open in New Tab
+            </Button>
           </div>
         </div>
       </div>
 
-      {/* PDF Viewer (initially hidden) */}
-      <div className={`container mx-auto px-4 transition-all duration-500 ${showPdf ? 'block' : 'hidden'}`}>
+      {/* PDF Viewer */}
+      <div className="container mx-auto px-4">
         {/* PDF Viewer Container */}
         <div className="mt-12 border rounded-lg overflow-hidden shadow-xl max-w-4xl mx-auto bg-white">
           <div className="h-[800px] w-full overflow-auto flex items-center justify-center bg-muted/20 relative">
