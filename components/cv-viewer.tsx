@@ -1,20 +1,31 @@
 "use client"
 
-import { useState } from "react"
-import { Download, ExternalLink, FileText, Loader2 } from "lucide-react"
+import { useState, useEffect } from "react"
+import { Download, ExternalLink, FileText, Loader2, Eye } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Document, Page, pdfjs } from 'react-pdf'
-import 'react-pdf/dist/Page/AnnotationLayer.css'
-import 'react-pdf/dist/Page/TextLayer.css'
+import dynamic from 'next/dynamic'
 
-// Configure PDF.js worker
-pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`
+// Dynamically import the PDF viewer with SSR disabled
+const PDFViewer = dynamic(
+  () => import('@/components/pdf-viewer').then((mod) => mod.PDFViewer),
+  { 
+    ssr: false,
+    loading: () => (
+      <div className="flex items-center justify-center p-12">
+        <Loader2 className="h-12 w-12 animate-spin text-primary" />
+      </div>
+    )
+  }
+)
 
 export default function CVViewer() {
   const [isLoading, setIsLoading] = useState(true)
   const [showPdf, setShowPdf] = useState(false)
-  const [numPages, setNumPages] = useState<number>()
-  const [pageNumber] = useState<number>(1)
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   const handleDownload = () => {
     const link = document.createElement("a")
@@ -101,36 +112,12 @@ export default function CVViewer() {
         {/* PDF Viewer Container */}
         <div className="mt-12 border rounded-lg overflow-hidden shadow-xl max-w-4xl mx-auto bg-white">
           <div className="h-[800px] w-full overflow-auto flex items-center justify-center bg-muted/20 relative">
-            {isLoading && (
-              <div className="absolute inset-0 flex items-center justify-center">
-                <Loader2 className="h-12 w-12 animate-spin text-primary" />
-              </div>
-            )}
-            <Document
-              file="/Ntsika-Ngilane-cv.pdf"
-              onLoadSuccess={onDocumentLoadSuccess}
-              loading={
-                <div className="flex items-center justify-center p-12">
-                  <Loader2 className="h-8 w-8 animate-spin text-primary" />
-                </div>
-              }
-              error={
-                <div className="p-8 text-center">
-                  <p className="text-red-500">Failed to load PDF. Please try downloading instead.</p>
-                </div>
-              }
-            >
-              <Page 
-                pageNumber={pageNumber} 
-                width={Math.min(800, typeof window !== 'undefined' ? window.innerWidth - 64 : 800)} 
-                className="shadow-lg"
-                loading={
-                  <div className="flex items-center justify-center p-12">
-                    <Loader2 className="h-8 w-8 animate-spin text-primary" />
-                  </div>
-                }
+            {isClient && (
+              <PDFViewer 
+                file="/Ntsika-Ngilane-cv.pdf"
+                onLoadSuccess={() => setIsLoading(false)}
               />
-            </Document>
+            )}
           </div>
         </div>
       </div>
