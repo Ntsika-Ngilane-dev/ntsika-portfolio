@@ -98,8 +98,6 @@ export default function CVViewer() {
 
       {/* PDF Viewer (initially hidden) */}
       <div className={`container mx-auto px-4 transition-all duration-500 ${showPdf ? 'block' : 'hidden'}`}>
-        <div>
-
         {/* PDF Viewer Container */}
         <div className="mt-12 border rounded-lg overflow-hidden shadow-xl max-w-4xl mx-auto bg-white">
           <div className="h-[800px] w-full overflow-auto flex items-center justify-center bg-muted/20 relative">
