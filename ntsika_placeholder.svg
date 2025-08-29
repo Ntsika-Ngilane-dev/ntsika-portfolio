@@ -1,0 +1,205 @@
+<svg viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Modern gradient for header -->
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#334155;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#475569;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Accent gradient -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Skill tag gradients -->
+    <linearGradient id="skillBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:0.25" />
+    </linearGradient>
+    
+    <linearGradient id="skillCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0.25" />
+    </linearGradient>
+    
+    <linearGradient id="skillPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.25" />
+    </linearGradient>
+    
+    <!-- Drop shadows -->
+    <filter id="cardShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="rgba(0,0,0,0.1)"/>
+    </filter>
+    
+    <filter id="textShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.5)"/>
+    </filter>
+    
+    <!-- Subtle pattern -->
+    <pattern id="subtlePattern" patternUnits="userSpaceOnUse" width="20" height="20">
+      <rect width="20" height="20" fill="rgba(255,255,255,0.02)"/>
+      <circle cx="10" cy="10" r="0.5" fill="rgba(255,255,255,0.05)"/>
+    </pattern>
+  </defs>
+  
+  <!-- Document background with subtle shadow -->
+  <rect width="600" height="800" fill="#ffffff" filter="url(#cardShadow)" rx="8"/>
+  
+  <!-- Header section with modern gradient and pattern -->
+  <rect width="600" height="140" fill="url(#headerGradient)" rx="8"/>
+  <rect width="600" height="140" fill="url(#subtlePattern)" rx="8"/>
+  
+  <!-- Geometric accent elements -->
+  <circle cx="520" cy="40" r="30" fill="rgba(6, 182, 212, 0.1)"/>
+  <circle cx="540" cy="80" r="20" fill="rgba(59, 130, 246, 0.1)"/>
+  <polygon points="480,90 500,70 520,90 500,110" fill="rgba(139, 92, 246, 0.1)"/>
+  
+  <!-- Name with modern typography -->
+  <text x="30" y="55" font-family="Arial, sans-serif" font-size="36" font-weight="900" fill="#ffffff" filter="url(#textShadow)" letter-spacing="0.5px">
+    Ntsika Ngilane
+  </text>
+  <rect x="30" y="65" width="120" height="3" fill="url(#accentGradient)" rx="2"/>
+  
+  <!-- Contact info with icons -->
+  <g fill="#e2e8f0" font-family="Arial, sans-serif" font-size="13">
+    <text x="30" y="85">📍 Pretoria, South Africa</text>
+    <text x="30" y="105">📱 +27 81 674 5941</text>
+    <text x="300" y="85">✉️ Workngilane@gmail.com</text>
+    <text x="300" y="105">💻 github.com/Ntsika-Ngilane-dev</text>
+  </g>
+  
+  <!-- Professional Summary with modern styling -->
+  <g transform="translate(30, 170)">
+    <rect x="0" y="0" width="540" height="85" fill="rgba(59, 130, 246, 0.03)" rx="8" stroke="rgba(59, 130, 246, 0.1)"/>
+    <text x="15" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1e293b">
+      Professional Summary
+    </text>
+    <rect x="15" y="30" width="60" height="2" fill="url(#accentGradient)" rx="1"/>
+    
+    <text x="15" y="50" font-family="Arial, sans-serif" font-size="12" fill="#475569" font-weight="400">
+      Full-stack developer and polymath building technology with intention and empathy.
+    </text>
+    <text x="15" y="65" font-family="Arial, sans-serif" font-size="12" fill="#475569">
+      Specializing in mental health tech, secure systems, and emotionally resonant interfaces.
+    </text>
+  </g>
+  
+  <!-- Skills section with modern tags -->
+  <text x="30" y="290" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1e293b">
+    Technical Expertise
+  </text>
+  <rect x="30" y="295" width="80" height="2" fill="url(#accentGradient)" rx="1"/>
+  
+  <!-- Skill categories with modern pill design -->
+  <g transform="translate(30, 315)">
+    <!-- Languages row -->
+    <rect x="0" y="0" width="65" height="22" fill="url(#skillBlue)" rx="11" stroke="#3b82f6" stroke-width="0.5"/>
+    <text x="32.5" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1d4ed8">Python</text>
+    
+    <rect x="75" y="0" width="75" height="22" fill="url(#skillCyan)" rx="11" stroke="#06b6d4" stroke-width="0.5"/>
+    <text x="112.5" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#0891b2">JavaScript</text>
+    
+    <rect x="160" y="0" width="75" height="22" fill="url(#skillPurple)" rx="11" stroke="#8b5cf6" stroke-width="0.5"/>
+    <text x="197.5" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#7c3aed">TypeScript</text>
+    
+    <rect x="245" y="0" width="50" height="22" fill="url(#skillBlue)" rx="11" stroke="#3b82f6" stroke-width="0.5"/>
+    <text x="270" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1d4ed8">Dart</text>
+    
+    <rect x="305" y="0" width="55" height="22" fill="url(#skillCyan)" rx="11" stroke="#06b6d4" stroke-width="0.5"/>
+    <text x="332.5" y="14" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#0891b2">HTML5</text>
+    
+    <!-- Frameworks row -->
+    <rect x="0" y="35" width="60" height="22" fill="url(#skillBlue)" rx="11" stroke="#3b82f6" stroke-width="0.5"/>
+    <text x="30" y="49" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1d4ed8">React</text>
+    
+    <rect x="70" y="35" width="65" height="22" fill="url(#skillCyan)" rx="11" stroke="#06b6d4" stroke-width="0.5"/>
+    <text x="102.5" y="49" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#0891b2">Node.js</text>
+    
+    <rect x="145" y="35" width="55" height="22" fill="url(#skillPurple)" rx="11" stroke="#8b5cf6" stroke-width="0.5"/>
+    <text x="172.5" y="49" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#7c3aed">Flutter</text>
+    
+    <rect x="210" y="35" width="55" height="22" fill="url(#skillBlue)" rx="11" stroke="#3b82f6" stroke-width="0.5"/>
+    <text x="237.5" y="49" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1d4ed8">Flask</text>
+    
+    <rect x="275" y="35" width="65" height="22" fill="url(#skillCyan)" rx="11" stroke="#06b6d4" stroke-width="0.5"/>
+    <text x="307.5" y="49" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#0891b2">FastAPI</text>
+    
+    <!-- Tools row -->
+    <rect x="0" y="70" width="55" height="22" fill="url(#skillBlue)" rx="11" stroke="#3b82f6" stroke-width="0.5"/>
+    <text x="27.5" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1d4ed8">Docker</text>
+    
+    <rect x="65" y="70" width="45" height="22" fill="url(#skillCyan)" rx="11" stroke="#06b6d4" stroke-width="0.5"/>
+    <text x="87.5" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#0891b2">AWS</text>
+    
+    <rect x="120" y="70" width="70" height="22" fill="url(#skillPurple)" rx="11" stroke="#8b5cf6" stroke-width="0.5"/>
+    <text x="155" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#7c3aed">MongoDB</text>
+    
+    <rect x="200" y="70" width="60" height="22" fill="url(#skillBlue)" rx="11" stroke="#3b82f6" stroke-width="0.5"/>
+    <text x="230" y="84" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#1d4ed8">Redis</text>
+  </g>
+  
+  <!-- Featured Projects with cards -->
+  <text x="30" y="440" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1e293b">
+    Featured Projects
+  </text>
+  <rect x="30" y="445" width="75" height="2" fill="url(#accentGradient)" rx="1"/>
+  
+  <!-- Project cards -->
+  <g transform="translate(30, 465)">
+    <!-- AI Knowledge Base -->
+    <rect x="0" y="0" width="260" height="60" fill="rgba(59, 130, 246, 0.05)" rx="8" stroke="rgba(59, 130, 246, 0.15)"/>
+    <circle cx="15" cy="15" r="4" fill="#3b82f6"/>
+    <text x="30" y="20" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1e293b">AI Personal Knowledge Base</text>
+    <text x="15" y="35" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Python-based local GPT-API memory system</text>
+    <text x="15" y="48" font-family="Arial, sans-serif" font-size="10" fill="#64748b">with semantic search and automation</text>
+    
+    <!-- Enterprise Server -->
+    <rect x="280" y="0" width="260" height="60" fill="rgba(6, 182, 212, 0.05)" rx="8" stroke="rgba(6, 182, 212, 0.15)"/>
+    <circle cx="295" cy="15" r="4" fill="#06b6d4"/>
+    <text x="310" y="20" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1e293b">Enterprise Home Server</text>
+    <text x="295" y="35" font-family="Arial, sans-serif" font-size="10" fill="#64748b">320TB Synology NAS with custom firewall</text>
+    <text x="295" y="48" font-family="Arial, sans-serif" font-size="10" fill="#64748b">and cloud-integrated backup system</text>
+    
+    <!-- Mental Health App -->
+    <rect x="0" y="75" width="260" height="60" fill="rgba(139, 92, 246, 0.05)" rx="8" stroke="rgba(139, 92, 246, 0.15)"/>
+    <circle cx="15" cy="90" r="4" fill="#8b5cf6"/>
+    <text x="30" y="95" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1e293b">Mental Health Companion</text>
+    <text x="15" y="110" font-family="Arial, sans-serif" font-size="10" fill="#64748b">CBT-based journaling and monitoring</text>
+    <text x="15" y="123" font-family="Arial, sans-serif" font-size="10" fill="#64748b">using Flutter with real-time adaptation</text>
+    
+    <!-- Insulin Pump -->
+    <rect x="280" y="75" width="260" height="60" fill="rgba(34, 197, 94, 0.05)" rx="8" stroke="rgba(34, 197, 94, 0.15)"/>
+    <circle cx="295" cy="90" r="4" fill="#22c55e"/>
+    <text x="310" y="95" font-family="Arial, sans-serif" font-size="13" font-weight="600" fill="#1e293b">Insulin Pump Concept</text>
+    <text x="295" y="110" font-family="Arial, sans-serif" font-size="10" fill="#64748b">Low-profile wearable with mobile control</text>
+    <text x="295" y="123" font-family="Arial, sans-serif" font-size="10" fill="#64748b">and smart biometric authentication</text>
+  </g>
+  
+  <!-- Personal Attributes with icons -->
+  <text x="30" y="640" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1e293b">
+    Core Strengths
+  </text>
+  <rect x="30" y="645" width="65" height="2" fill="url(#accentGradient)" rx="1"/>
+  
+  <g transform="translate(30, 665)" font-family="Arial, sans-serif" font-size="12" fill="#475569">
+    <text x="0" y="15">🚀 Visionary Tech Optimist - Technology for healing and empowerment</text>
+    <text x="0" y="35">❤️ Empathetic Mental Health Advocate - Building with lived experience</text>
+    <text x="0" y="55">🧠 Hyperfocused Self-Learner - Rapidly masters complex systems</text>
+    <text x="0" y="75">⚡ Systems Thinker - Sees interconnections across all domains</text>
+  </g>
+  
+  <!-- Education section -->
+  <g transform="translate(30, 750)">
+    <rect x="0" y="0" width="540" height="40" fill="rgba(6, 182, 212, 0.03)" rx="8" stroke="rgba(6, 182, 212, 0.1)"/>
+    <text x="15" y="20" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#1e293b">
+      CodeSpace Institute (2025– )
+    </text>
+    <text x="15" y="35" font-family="Arial, sans-serif" font-size="11" fill="#64748b">
+      Full-Stack Software Engineering – React, Node.js, Python, Databases, Deployment
+    </text>
+  </g>
+</svg>
