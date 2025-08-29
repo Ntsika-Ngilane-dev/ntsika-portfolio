@@ -113,7 +113,7 @@ export default function CVViewer() {
           <div className="h-[800px] w-full overflow-auto flex items-center justify-center bg-muted/20 relative">
             {isClient && (
               <PDFViewer 
-                file="/Ntsika-Ngilane-cv.pdf"
+                file="./Ntsika-Ngilane-cv.pdf"
                 onLoadSuccess={() => setIsLoading(false)}
               />
             )}
