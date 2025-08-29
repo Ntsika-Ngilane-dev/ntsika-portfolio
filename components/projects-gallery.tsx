@@ -64,7 +64,7 @@ const projects: Project[] = [
     category: "Full-Stack",
     githubUrl: "https://github.com/Ntsika-Ngilane-dev/odd-jobs-marketplace.git",
     demoUrl: "https://odd-jobs-marketplace-ntsika-ngilane-devs-projects.vercel.app/",
-    imageUrl: "/oddjobs.png",
+    imageUrl: "./oddjobs.png",
     features: [
       "User authentication and profiles",
       "Job posting and management",
@@ -103,9 +103,9 @@ const projects: Project[] = [
       "A comprehensive web platform for CappyBara Tech, a medical technology startup focused on endocrinology devices. The site serves as both a marketing platform and a portal for healthcare professionals to learn about cutting-edge medical solutions.",
     techStack: ["React", "Node.js", "MongoDB", "Express", "AWS", "Stripe"],
     category: "Full-Stack",
-    githubUrl: "https://github.com/cappybara-tech/website",
-    demoUrl: "https://cappybaratech.com",
-    imageUrl: "/placeholder.svg?height=400&width=600&text=CappyBara+Tech",
+    githubUrl: "https://github.com/Ntsika-Ngilane-dev/Cappybara_Tech.git",
+    demoUrl: "https://ntsika-ngilane-dev.github.io/Cappybara_Tech/",
+    imageUrl: "./capytech.png",
     features: [
       "Healthcare professional portal",
       "Product showcase and demos",
@@ -115,10 +115,16 @@ const projects: Project[] = [
       "Regulatory compliance features",
     ],
     challenges: [
-      "HIPAA compliance requirements",
-      "Medical data security",
-      "Complex user role management",
-      "Integration with medical devices",
+      "Ensuring HIPAA compliance for handling sensitive patient data and implementing end-to-end encryption for all communications",
+      "Designing a robust role-based access control (RBAC) system for different healthcare professional roles with varying permission levels",
+      "Implementing secure authentication with multi-factor authentication (MFA) and session management for healthcare providers",
+      "Developing a real-time data synchronization system for medical device integration while maintaining data integrity",
+      "Creating a responsive and accessible UI that meets WCAG 2.1 AA standards for healthcare professionals and patients",
+      "Implementing audit trails and activity logging for all sensitive operations to meet regulatory requirements",
+      "Optimizing performance for handling large medical imaging files and real-time data streams from connected devices",
+      "Ensuring cross-browser compatibility and mobile responsiveness for healthcare providers using various devices",
+      "Implementing secure file storage and management for medical documentation and imaging",
+      "Developing a scalable architecture to handle increasing numbers of concurrent users and data volume"
     ],
     outcomes: [
       "Successful product launch",
