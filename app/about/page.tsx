@@ -1,7 +1,6 @@
 import Navigation from "@/components/navigation"
 import ParticleBackground from "@/components/particle-background"
 import AboutHero from "@/components/about-hero"
-import JourneyTimeline from "@/components/journey-timeline"
 
 export default function AboutPage() {
   return (
@@ -12,7 +11,6 @@ export default function AboutPage() {
       <main className="relative z-10 pt-24 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AboutHero />
-          <JourneyTimeline />
         </div>
       </main>
     </div>
