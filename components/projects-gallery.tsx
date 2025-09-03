@@ -142,8 +142,8 @@ const projects: Project[] = [
       "A collection of sophisticated desktop games built with C# and .NET, demonstrating advanced programming concepts, game mechanics, and system architecture. Each game presents unique challenges in areas such as AI, physics simulation, and real-time rendering.",
     techStack: ["C#", ".NET", "Unity", "WPF", "DirectX", "SQLite"],
     category: "Desktop",
-    githubUrl: "https://github.com/ntsika-ngilane/csharp-games",
-    imageUrl: "/placeholder.svg?height=400&width=600&text=C%23+Games+Collection",
+    githubUrl: "https://github.com/Ntsika-Ngilane-dev/Snake.git",
+    imageUrl: "./snake.png",
     features: [
       "Advanced AI opponents",
       "Physics-based gameplay",
@@ -174,8 +174,9 @@ const projects: Project[] = [
       "A comprehensive task management application built with React Native, featuring offline capabilities, real-time synchronization, and intuitive user interface design. The app helps users organize their work and personal tasks efficiently.",
     techStack: ["React Native", "TypeScript", "Firebase", "Redux", "Expo"],
     category: "Mobile",
-    githubUrl: "https://github.com/ntsika-ngilane/task-manager",
-    imageUrl: "/placeholder.svg?height=400&width=600&text=Task+Manager+App",
+    githubUrl: "https://github.com/Ntsika-Ngilane-dev/NoirFlow.git",
+    imageUrl: "./noirflow.png",
+    demoUrl: "https://ntsika-ngilane-dev.github.io/NoirFlow/",
     features: [
       "Offline task management",
       "Real-time synchronization",
