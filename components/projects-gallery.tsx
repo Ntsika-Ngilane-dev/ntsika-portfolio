@@ -231,6 +231,27 @@ const projects: Project[] = [
     ],
     featured: false,
   },
+  id: 7,
+    title: "Zenith music site",
+    shortDescription: "A website to showcase Zeniths music",
+    fullDescription:
+      "A website to tell Zeniths story and showcase his music influence and how music has influenced him.",
+    techStack: ["Vue.js", "Python", "PostgreSQL", "Redis", "Docker", "AWS"],
+    category: "Web",
+    githubUrl: "https://github.com/Ntsika-Ngilane-dev/Zen.git",
+    imageUrl: "./zen.png",
+    demoUrl: "https://ntsika-ngilane-dev.github.io/Zen/",
+    features: [
+      
+    ],
+    challenges: [
+     
+    ],
+    outcomes: [
+      
+    ],
+    featured: false,
+  },
 ]
 
 export default function ProjectsGallery() {
