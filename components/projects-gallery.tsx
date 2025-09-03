@@ -231,6 +231,7 @@ const projects: Project[] = [
     ],
     featured: false,
   },
+  {
   id: 7,
     title: "Zenith music site",
     shortDescription: "A website to showcase Zeniths music",
