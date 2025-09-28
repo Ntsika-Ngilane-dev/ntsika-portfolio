@@ -27,14 +27,14 @@ export default function ContactInfo() {
     {
       icon: <Phone className="w-6 h-6" />,
       label: "Phone/WhatsApp",
-      value: "+27 68 928 0010
+      value: "+27 68 928 0010",
       href: "tel:+27 68 928 0010",
     },
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
       value: "github.com/Ntsika-Ngilane",
-      href: "https://github.com/Ntsika-Ngilane",
+      href: "https://github.com/Ntsika-Ngilane-Dev",
     },
     {
       icon: <Instagram className="w-6 h-6" />,
