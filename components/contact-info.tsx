@@ -27,8 +27,8 @@ export default function ContactInfo() {
     {
       icon: <Phone className="w-6 h-6" />,
       label: "Phone/WhatsApp",
-      value: "+27 81 674 5941", "+27 68 928 0010", "+27 82 908 0581"
-      href: "tel:+27 81 674 5941", "tel:+27 68 928 0010", "tel:+27 82 908 0581"
+      value: "+27 68 928 0010
+      href: "tel:+27 68 928 0010",
     },
     {
       icon: <Github className="w-6 h-6" />,
