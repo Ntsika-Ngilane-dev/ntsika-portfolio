@@ -62,15 +62,16 @@ export default function HomePage() {
               </Button>
             </Link>
 
-            <Button
-              variant="outline"
-              size="lg"
-              className="font-mono text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 bg-transparent hover-glow"
-            >
-              <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-              Download CV
-            </Button>
-          </div>
+            <div>
+<a
+    href="/cv.pdf"
+    download="My_CV.pdf"
+    className="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition"
+  >
+    <Download className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+    Download CV
+  </a>
+</div>
 
           <div className="animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-mono px-4">
