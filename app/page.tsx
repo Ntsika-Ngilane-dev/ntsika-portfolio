@@ -72,21 +72,20 @@ export default function HomePage() {
     Download CV
   </a>
 </div>
-
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
-            <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-mono px-4">
-              Full-stack developer and tech innovator from South Africa, building sleek, functional, and human-centered
-              digital experiences.
-            </p>
-          </div>
-        </div>
-      </main>
-
-      <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
-        <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-muted-foreground rounded-full flex justify-center hover-glow cursor-pointer">
+<div className="animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
+      <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-mono px-4">
+               Full-stack developer and tech innovator from South Africa, building sleek, functional, and human-centered
+               digital experiences.
+      </p>
+    </div>
+  </div> // This closes the main inner content <div>
+</main>
+ 
+       <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
+         <div className="w-5 h-8 sm:w-6 sm:h-10 border-2 border-muted-foreground rounded-full flex justify-center hover-glow cursor-pointer">
           <div className="w-1 h-2 sm:h-3 bg-muted-foreground rounded-full mt-2 animate-pulse"></div>
-        </div>
-      </div>
+</div>
+</div>
     </div>
   )
 }
