@@ -23,34 +23,23 @@ export interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Dynamic Insurance Pricing Portal",
-    shortDescription: "AI-powered insurance premium calculation system with real-time risk assessment",
+    title: "Tesla Landing Clone",
+    shortDescription: "A clone of Teslas landing page with my own touches",
     fullDescription:
-      "A sophisticated web application that revolutionizes insurance pricing by dynamically adjusting premiums based on comprehensive risk factors. The system integrates multiple data sources, applies machine learning algorithms for risk assessment, and provides real-time pricing updates to both agents and customers.",
-    techStack: ["React", ".NET Core", "SQL Server", "Azure", "C#", "TypeScript"],
+      "A clone of the tesla landing page done as a project for Zaio ai engineering course project #1",
+    techStack: ["Html", "Css", "JavaScript","TypeScript", "tailwind"],
     category: "Full-Stack",
-    githubUrl: "https://github.com/ntsika-ngilane/insurance-pricing",
-    demoUrl: "https://insurance-demo.ntsika.dev",
-    imageUrl: "/placeholder.svg?height=400&width=600&text=Insurance+Pricing+Portal",
+    githubUrl: "https://github.com/Ntsika-Ngilane-dev/Tesla-landing-page.git",
+    demoUrl: "https://tesla-landing-page-xi-one.vercel.app/",
+    imageUrl: "./tesla.png",
     features: [
-      "Real-time premium calculations",
-      "Multi-factor risk assessment",
-      "Agent dashboard with analytics",
-      "Customer self-service portal",
-      "Integration with external data sources",
-      "Automated policy generation",
+      
     ],
     challenges: [
-      "Complex risk calculation algorithms",
-      "Real-time data synchronization",
-      "Scalable architecture design",
-      "Regulatory compliance requirements",
+      
     ],
     outcomes: [
-      "40% reduction in pricing turnaround time",
-      "25% improvement in risk accuracy",
-      "Enhanced customer satisfaction",
-      "Streamlined agent workflows",
+     
     ],
     featured: true,
   },
