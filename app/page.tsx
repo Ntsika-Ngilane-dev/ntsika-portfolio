@@ -41,6 +41,7 @@ export default function HomePage() {
               </span>
             </h1>
           </div>
+        </div>
 
           <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-mono mb-8 h-12 sm:h-14 md:h-16 flex items-center justify-center">
