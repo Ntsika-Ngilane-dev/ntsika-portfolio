@@ -21,8 +21,8 @@ export default function ContactInfo() {
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      value: "ntsikangilane.dev@gmail.com",
-      href: "mailto:ntsikangilane.dev@gmail.com",
+      value: "workngilane@gmail.com",
+      href: "mailto:workngilane@gmail.com",
     },
     {
       icon: <Phone className="w-6 h-6" />,
@@ -33,14 +33,14 @@ export default function ContactInfo() {
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      value: "github.com/Ntsika-Ngilane",
+      value: "github.com/Ntsika-Ngilane-dev",
       href: "https://github.com/Ntsika-Ngilane-Dev",
     },
     {
       icon: <Instagram className="w-6 h-6" />,
       label: "Instagram",
-      value: "@ntsika.dev",
-      href: "https://instagram.com/ntsika.dev",
+      value: "@BaraStudios",
+      href: "https://instagram.com/BaraStudios",
     },
     {
       icon: <MapPin className="w-6 h-6" />,
